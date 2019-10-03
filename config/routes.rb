@@ -1,6 +1,11 @@
 Rails.application.routes.draw do
-  get 'toppages/index'
-  root to: 'toppages#index'
+  get 'tasks/create'
+  get 'tasks/destroy'
+  get 'sessions/new'
+  get 'sessions/create'
+  get 'sessions/destroy'
+  get 'tasks/index'
+  root to: 'tasks#index'
   
   get 'signup', to: 'users#new'
   get 'login', to: 'sessions#new'
